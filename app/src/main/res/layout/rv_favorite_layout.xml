@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cv_Fav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:layout_margin="10dp"
+        android:elevation="30dp"
+        app:neumorph_shadowColorLight="@color/black"
+        app:neumorph_shadowElevation="7dp"
+        app:neumorph_shapeType="basin"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_H_Fav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightest_grey"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="100dp">
+
+                <TextView
+                    android:id="@+id/tv_number_Fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:text="1" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_Fav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightest_grey"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_FavQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="@string/textt" />
+
+                <TextView
+                    android:id="@+id/tv_FavQuotesAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="textNoSuggestions|text"
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="@string/myname" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+    <ImageView
+        android:id="@+id/delete_Fav"
+        android:layout_width="10dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_delete"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>

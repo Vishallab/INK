@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_allQuotes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="30dp"
+    app:neumorph_shadowColorLight="@color/black"
+    app:neumorph_shadowElevation="7dp"
+    app:neumorph_shapeType="basin"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:id="@+id/ll_H_allQuotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightest_grey"
+        android:orientation="horizontal"
+
+        android:padding="10dp">
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:neumorph_backgroundColor="#E6E6E6"
+            app:neumorph_shapeType="pressed"
+            app:cardCornerRadius="100dp">
+
+            <TextView
+                android:id="@+id/tv_number_allQuotes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="1" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <LinearLayout
+            android:id="@+id/ll_allQuotes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightest_grey"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_allQuotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:inputType="textNoSuggestions|textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="@string/textt" />
+
+            <TextView
+                android:id="@+id/tv_allQuotesAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textNoSuggestions|text"
+                android:gravity="right"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="@string/myname" />
+        </LinearLayout>
+    </LinearLayout>
+
+</soup.neumorphism.NeumorphCardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.vishal.ink.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.vishal.ink.ui.Favorite.FavoriteFragment"
+        android:label="@string/title_Favorite"
+        tools:layout="@layout/fragment_favorite" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.vishal.ink.ui.AddOwn.AddOwnFragment"
+        android:label="@string/title_Add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_navigation_add_to_writeOwnQuotesFragment"
+            app:destination="@id/writeOwnQuotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writeOwnQuotesFragment"
+        android:name="com.vishal.ink.ui.AddOwn.OwnQuotes.WriteOwnQuotesFragment"
+        android:label="fragment_write_own_quotes"
+        tools:layout="@layout/fragment_write_own_quotes" >
+        <action
+            android:id="@+id/action_writeOwnQuotesFragment_to_navigation_add"
+            app:destination="@id/navigation_add" />
+    </fragment>
+
+
+</navigation>
