@@ -1,4 +1,4 @@
-# Cine-Mate
+# INK
 INK is an Android application  for poetic people and for writers who have the will of writing and read Quotes to keep them as memory .This repository contains the source code for the INK app developed by Vishal Mishra.
 
 
