@@ -83,5 +83,4 @@ Contributions are welcome! Please fork this repository and submit pull requests 
 Connect with me:
 - [LinkedIn](https://www.linkedin.com/in/vishalmishra01)
 - [Instagram](https://www.instagram.com/ig_viishal)
-- 
 - [GitHub](https://www.github.com/Vishallab)
